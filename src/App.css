@@ -12,7 +12,49 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.quiz_container{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(165, 176, 176); 
+}
+.quiz_question{
+  height: 500px;
+  width: 60%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  color: aliceblue;
+  background-color: rgb(145, 190, 216);
+  font-size:2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.quiz_answer{
+  padding: 2rem;
+  border-top: 1px solid #ccc;
+}
+.quiz_answerul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  list-style-type: none;
+}
+.quiz_answerli{
+  padding: 1rem;
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+}
+.button{
+  height: 40px;
+  width: 100px;
+  font-size: 1rem;
+  background-color: rgb(58, 225, 120);
+  color: rgba(10, 10, 11, 0.821);
+  align-items: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +77,5 @@
   to {
     transform: rotate(360deg);
   }
+
 }
